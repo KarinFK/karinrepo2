@@ -26,16 +26,16 @@ class App extends React.Component<{}, IState> {
   }
 
   render() {
-    const {nama, kelas, isMorning}= this.state
+    const {nama, kelas, isMorning, counter}= this.state
     
     return (
       <div className='app-wrapper'>
         <Info 
-          nama={this.state.nama}
-          kelas={this.state.kelas}
-          isMorning={this.state.isMorning}
+          nama={nama}
+          kelas={kelas}
+          isMorning={isMorning}
         />
-        <Counter num={Counter} handleAppState={this.incrementCounter}/>
+        <Counter num={counter} handleAppState={this.incrementCounter}/>
       </div>
     )   
   }

@@ -6,7 +6,7 @@ interface IProps {
     isMorning: boolean;
 }
 
-class Info extends React.Component {
+class Info extends React.Component <IProps>{
     render() {
         return (
             <div>
